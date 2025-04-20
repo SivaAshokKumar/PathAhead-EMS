@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathAhead|Courses</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+            color: white;
+        }
+        .course-card {
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+            overflow: hidden;
+            color: black;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .course-image {
+            height: 200px;
+            object-fit: cover;
+        }
+        .course-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .course-description {
+            color: #666;
+        }
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+            z-index: 10;
+        }
+        .icon {
+            width: 40px; /* Icon size */
+            height: 40px;
+            margin-right: 10px; /* Spacing */
+        }
+        footer {
+            background-color: #343a40; /* Dark background for the footer */
+            color: #f8f9fa; /* Light text color */
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h6{
+        font-size:10px;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dq7pblvqg/image/upload/v1730571973/PathAhead/1_djhr1h.png">
+    
+</head>
+<body>
+    <nav class="navbar">
+     
+        <img src="https://res.cloudinary.com/dq7pblvqg/image/upload/v1730571797/PathAhead/1_g38ay2.png" alt="Icon" class="icon">
+     <!-- <center><span class="navbar-brand mb-0 h1">PathAhead|Courses</span></center> -->
+     
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Path Ahead Navigating Courses</h2>
+        <div class="row">
+            <!-- Updated Course Cards -->
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/4aGml93rJFrePKSJ1cG3hhNKezDvz7SW1zAynPFlmgp8uUtTA.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">The Complete Software Engineering Course</div>
+                    <div class="course-description">Learn Software Engineering from scratch with real-world projects.</div>
+                    <a href="https://www.udemy.com/course/software-engineering-course/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/fHnHve8p04sJmUcEOhXSM7sjtZeaKKGbya2y6CF7qx0XeS1OB.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">Data Analysis with Pandas and Python</div>
+                    <div class="course-description">Master data analysis using Python and Pandas.</div>
+                    <a href="https://www.udemy.com/course/data-analysis-with-pandas-and-python/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/tTdAiz4e5pU4EqjOKHjqGkl1ahFYj6d5vdAbGedkdvidvUtTA.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">Become a Product Manager</div>
+                    <div class="course-description">Learn the skills needed for product management.</div>
+                    <a href="https://www.udemy.com/course/become-a-product-manager/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/oaldXNQQCu6pKdlOff7YCbMyad6sewQhdh4r56M5b43bfS1OB.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">HR Fundamentals: Human Resource Management</div>
+                    <div class="course-description">Get a comprehensive introduction to HR management.</div>
+                    <a href="https://www.udemy.com/course/hr-fundamentals-human-resource-management/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/h1BfCAnvufnnYUbUNNJZCieeQeLmPqgh4i1KYSMf6YRYfXq2JA.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">SDE Internship: Learn to Code like a Pro</div>
+                    <div class="course-description">Prepare for SDE internships with coding challenges and projects.</div>
+                    <a href="https://www.udemy.com/course/sde-internship-learn-to-code-like-a-pro/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/mKF9b6HsGkoPJ9s0UC1Rn1ofb9Oe59fF240TWe9fu4xlBmqdC.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">Front-End Development with React and Redux</div>
+                    <div class="course-description">Master front-end development using React and Redux.</div>
+                    <a href="https://www.udemy.com/course/front-end-development-with-react-and-redux/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/fDKRBYLevio8OUz46gWOjxDDI54i0AJXDJ8o2EbOU37dwUtTA.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">Back-End Development with Node.js and Express</div>
+                    <div class="course-description">Learn back-end development using Node.js and Express.</div>
+                    <a href="https://www.udemy.com/course/back-end-development-with-node-js-and-express/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/g2p40EgddwIQI5fZTZufOIfhvBAMBj1jmVG7t46XVTBphpanA.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">PHP for Beginners: Learn PHP Programming</div>
+                    <div class="course-description">Get started with PHP programming from scratch.</div>
+                    <a href="https://www.udemy.com/course/php-for-beginners-learn-php-programming/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/oDUGE9UxVeXlaKsZh3KnsCAwP3dWcDYCT0btxPYndRjhYq2JA.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">VLSI Design: Digital IC Design and Verification</div>
+                    <div class="course-description">Learn VLSI design and verification techniques.</div>
+                    <a href="https://www.udemy.com/course/vlsi-design-digital-ic-design-and-verification/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card p-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/0AHT5zfyFOSdUiQYhcMt5A66TZYOKLKMoN1D7OrznxarYq2JA.jpg" class="course-image" alt="Course Image">
+                    <div class="course-title">CAD Design: Learn 2D and 3D Design with AutoCAD</div>
+                    <div class="course-description">Master CAD design using AutoCAD for 2D and 3D designs.</div>
+                    <a href="https://www.udemy.com/course/cad-design-learn-2d-and-3d-design-with-autocad/" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+            <!-- Add more courses similarly -->
+        </div>
+
+       
+    </div>
+
+      
+      <footer>
+        <p>Explore a world of knowledge with our diverse course offerings. Join us today! </p>
+       <h6><p> All the Above courses are recommentations only.We didn't provide any Gurantees for job assurance.</p></h6> 
+    </footer>
+    <script>
+        document.getElementById('courseSelector').addEventListener('change', function() {
+            const selectedCourse = this.value;
+            alert("You selected: " + selectedCourse);
+        });
+    </script>
+</body>
+</html>

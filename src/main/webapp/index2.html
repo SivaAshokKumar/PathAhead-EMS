@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathAhead - Empowering Careers</title>
+    <link rel="icon" href="https://res.cloudinary.com/dq7pblvqg/image/upload/v1730571973/PathAhead/1_djhr1h.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f4f6f9;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #c0392b;
+        }
+
+        .features {
+            padding: 4rem 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .developers {
+            margin-top: 1rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <img src="https://res.cloudinary.com/dq7pblvqg/image/upload/v1730571973/PathAhead/1_djhr1h.png" alt="PathAhead Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#screening">Screening</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="/signup/login.jsp">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>PathAhead</h1>
+                <p>Empowering careers, one opportunity at a time.</p>
+                <a href="/signup/login.jsp" class="cta-btn">Get Started</a>
+            </div>
+        </section>
+
+        <section id="screening" class="features">
+            <div class="container">
+                <h2>Professional Screening</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Personalized Assessment</h3>
+                        <p>We gather your professional details to provide a comprehensive evaluation.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h3>Tailored Feedback</h3>
+                        <p>Receive personalized reviews directly to your email inbox.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Job Recommendations</h3>
+                        <p>Get matched with opportunities based on your preferred job roles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="features">
+            <div class="container">
+                <h2>Career-Boosting Courses</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Skill Enhancement</h3>
+                        <p>Access courses designed to improve your professional skillset.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Career Advancement</h3>
+                        <p>Learn strategies to climb the career ladder effectively.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Industry-Relevant Content</h3>
+                        <p>Stay updated with courses tailored to current market demands.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PathAhead. All
+                        <p>&copy; 2024 PathAhead. All rights reserved.</p>
+            <div class="developers">
+                <p>Developed with ❤️ by</p>
+                <p>Siva & Sedhu</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        window.addEventListener('scroll', function() {
+            const features = document.querySelectorAll('.feature-card');
+            features.forEach(feature => {
+                const featurePosition = feature.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if(featurePosition < screenPosition) {
+                    feature.style.opacity = '1';
+                    feature.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+
+    <style>
+        /* Additional styles for enhanced UI */
+        .social-links {
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Animation styles */
+        .feature-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        /* Responsive design improvements */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                padding: 1rem;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: block;
+            }
+
+            .nav-links li {
+                margin: 1rem 0;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Additional decorative elements */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('path-to-pattern.png') repeat;
+            opacity: 0.1;
+        }
+
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--primary-color);
+            border-radius: 0 0 10px 10px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* Gradient text effect for headings */
+        section h2 {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        /* Pulse animation for CTA button */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .cta-btn {
+            animation: pulse 2s infinite;
+        }
+
+        .cta-btn:hover {
+            animation: none;
+        }
+    </style>
+</body>
+</html>

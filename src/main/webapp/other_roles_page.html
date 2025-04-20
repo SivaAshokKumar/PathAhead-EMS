@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Openings Available | PathAhead</title>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dq7pblvqg/image/upload/v1730571973/PathAhead/1_djhr1h.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+
+        body {
+            background: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .no-openings-container {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .message-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 2rem;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .message-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .illustration {
+            max-width: 300px;
+            margin: 2rem auto;
+        }
+
+        .title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .message {
+            color: #666;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .notification-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .custom-input {
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            padding: 0.8rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .custom-input:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+        }
+
+        .subscribe-btn {
+            background: var(--secondary-color);
+            border: none;
+            border-radius: 25px;
+            padding: 0.8rem 2rem;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .subscribe-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .floating-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .suggestions-container {
+            margin-top: 2rem;
+            padding: 1rem;
+        }
+
+        .suggestion-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .suggestion-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="no-openings-container">
+        <div class="message-card" data-aos="fade-up">
+            <span class="badge badge-warning floating-badge">
+                <i class="fas fa-bell"></i> Job Alert
+            </span>
+
+            <img src="https://illustrations.popsy.co/amber/work-from-home.svg" alt="No Openings Illustration" class="illustration">
+            
+            <h1 class="title">No Current Openings</h1>
+            
+            <p class="message">
+                We apologize, but there are currently no openings available for this role. 
+                Great opportunities take time, and we appreciate your patience. 
+                Subscribe to our job alerts to be notified when relevant positions become available.
+            </p>
+
+            <div class="notification-form">
+                <h3 class="mb-4">Get Notified About New Openings</h3>
+                <form class="row justify-content-center align-items-center">
+                    <div class="col-md-8 mb-3">
+                        <input type="email" class="form-control custom-input" placeholder="Enter your email address">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <button type="submit" class="btn subscribe-btn btn-block">
+                            <i class="fas fa-bell mr-2"></i>Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="suggestions-container">
+                <h4 class="mb-3">You might be interested in:</h4>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right">
+                        <div class="suggestion-card">
+                            <i class="fas fa-laptop-code mb-2"></i>
+                            <h5>Similar Roles</h5>
+                            <p class="small">Explore related positions</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="suggestion-card">
+                            <i class="fas fa-graduation-cap mb-2"></i>
+                            <h5>Skill Development</h5>
+                            <p class="small">Enhance your qualifications</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left">
+                        <div class="suggestion-card">
+                            <i class="fas fa-briefcase mb-2"></i>
+                            <h5>Career Resources</h5>
+                            <p class="small">Access helpful materials</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 PathAhead. All rights reserved.</p>
+            <small class="text-muted">Empowering careers, one opportunity at a time.</small>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Simple form submission prevention
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing to job alerts!');
+        });
+
+        // Add interactivity to suggestion cards
+        document.querySelectorAll('.suggestion-card').forEach(card => {
+            card.addEventListener('click', function() {
+                alert('Redirecting to ' + this.querySelector('h5').textContent);
+            });
+        });
+    </script>
+</body>
+</html>
